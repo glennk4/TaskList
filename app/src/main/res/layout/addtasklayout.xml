@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".AddTask">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTask">
+
+    <TextView
+        android:id="@+id/addTskTitle"
+        android:layout_width="180dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="102dp"
+        android:text="Add New Task "
+        android:textAlignment="center"
+        android:textColor="#F50057"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Task Name "
+        android:textAlignment="center"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTskTitle" />
+
+    <EditText
+        android:id="@+id/TaskDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="133dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Task Description"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskName" />
+
+    <TextView
+        android:id="@+id/dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Select Date"
+        android:inputType="date"
+        android:text="Click here to add Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TaskDesc"
+        tools:text="Due Date" />
+
+    <Button
+        android:id="@+id/addNewTaskBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="64dp"
+        android:text="Save New Task"
+        app:backgroundTint="#F50057"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
