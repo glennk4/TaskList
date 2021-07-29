@@ -9,5 +9,5 @@ The app’s functionality requirements are as follows. First page (todo item lis
 
 SQL functionality complete, and majority of requirements met
 
-Few bugs due identified due to short turnaround time given - Order by date in SQLlite not working yet
+Few bugs due identified due to short turnaround time given - 
                                                            - Edit task mode disabled 
